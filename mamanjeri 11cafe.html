@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Base reset & body styling */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #313338;
+            padding: 30px 15px;
+            color: #333333;
+        }
+
+        
+        /* Header Navigation */
+        header {
+            background-color: #1a110a;
+            padding: 12px 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .brand {
+            color: #e2a829;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        header nav a {
+            color: #e2a829;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        /* Hero Banner */
+        .hero {
+            background: linear-gradient(to right, #e06d2a, #f39233, #e06d2a);
+            color: #ffffff;
+            text-align: center;
+            padding: 45px 20px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        /* Main Grid Content Area */
+        .main-content {
+            padding: 18px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #d3d3d3;
+            padding: 14px;
+            border-radius: 2px;
+        }
+
+        .card h3 {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #222222;
+        }
+
+        /* Menu Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+
+        th, td {
+            border: 1px solid #cccccc;
+            padding: 7px 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f1b82d;
+            color: #1a110a;
+            font-weight: bold;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+
+        /* Order Form Styling */
+        .form-group {
+            margin-bottom: 10px;
+        }
+
+        input[type="text"], select {
+            width: 100%;
+            padding: 6px 8px;
+            font-size: 13px;
+            border: 1px solid #cccccc;
+            border-radius: 3px;
+            background-color: #ffffff;
+            color: #333333;
+        }
+
+        button {
+            background-color: #da4f36;
+            color: #ffffff;
+            border: none;
+            padding: 7px 14px;
+            font-size: 13px;
+            font-weight: bold;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        /* Footer Placeholders (Gallery & Contact) */
+        .info-box {
+            background-color: #f7f7f5;
+            border: 1px solid #d3d3d3;
+            padding: 18px 12px;
+            font-size: 13px;
+            color: #333333;
+            border-radius: 2px;
+        }
+
+        /* Footer Copyright */
+        footer {
+            background-color: #1a110a;
+            color: #cccccc;
+            text-align: center;
+            padding: 10px;
+            font-size: 11px;
+        }
+    </style>
+    </style>
+</head>
+<body>
+
+    <div class="preview-card">
+        <!-- Header -->
+        <header>
+            <div class="brand">Mama Njeri's Kitchen</div>
+            <nav>
+                <a href="#">Menu</a> • 
+                <a href="#">Order</a> • 
+                <a href="#">Visit</a>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            Fresh Kenyan food, cooked daily
+        </section>
+
+        <!-- Main Grid Layout -->
+        <div class="main-content">
+            <!-- Table Box -->
+            <div class="card">
+                <h3>Menu (table)</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dish</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pilau</td>
+                            <td>KES 350</td>
+                        </tr>
+                        <tr>
+                            <td>Ugali & Sukuma</td>
+                            <td>KES 250</td>
+                        </tr>
+                        <tr>
+                            <td>Chapati (2)</td>
+                            <td>KES 100</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Form Box -->
+            <div class="card">
+                <h3>Place an order (form)</h3>
+                <form action="#">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="pilau">Pilau</option>
+                            <option value="ugali-sukuma">Ugali & Sukuma</option>
+                            <option value="chapati">Chapati (2)</option>
+                        </select>
+                    </div>
+                    <button type="submit">Send order</button>
+                </form>
+            </div>
+
+            <!-- Gallery Placeholder Box -->
+            <div class="info-box">
+                Gallery: 3 photos in a div grid (images)
+            </div>
+
+            <!-- Hours & Contact Box -->
+            <div class="info-box">
+                Opening hours and contact (div)
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            &copy; 2026 Mama Njeri's Kitchen
+        </footer>
+    </div>
+
+</body>
+</html>
